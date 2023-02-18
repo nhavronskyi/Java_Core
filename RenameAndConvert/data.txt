@@ -1,0 +1,10 @@
+Month:
+12
+
+Year:
+2022
+
+Format:
+HEIC
+to: 
+jpeg
