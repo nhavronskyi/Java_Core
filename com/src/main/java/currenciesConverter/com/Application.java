@@ -22,7 +22,7 @@ public class Application {
     	
     	System.out.println("from USD UAH EUR");
     	String from = sc.next();
-    	converterController.setFrom(from);
+    	converterController.setFrom(from.toUpperCase());
     	
     	System.out.println("amount");
     	double amount = sc.nextDouble();
@@ -30,7 +30,7 @@ public class Application {
     	
     	System.out.println("to USD UAH EUR");
     	String to = sc.next();
-    	converterController.setTo(to);
+    	converterController.setTo(to.toUpperCase());
     	
     	System.out.println(converterController.getFrom() + " " + converterController.getAmount() + " " + converterController.getTo());
     	
