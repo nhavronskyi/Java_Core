@@ -4,27 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="822548eb-cc96-4a8c-90eb-b90626d30f32" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20230227.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/com.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/com/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/src/main/java/currenciesConverter/com/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/com/src/main/java/currenciesConverter/com/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/src/main/java/currenciesConverter/com/ConverterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/com/src/main/java/currenciesConverter/com/ConverterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/src/main/java/currenciesConverter/com/ConverterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/com/src/main/java/currenciesConverter/com/ConverterService.java" afterDir="false" />
-    </list>
+    <list default="true" id="822548eb-cc96-4a8c-90eb-b90626d30f32" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,7 +69,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1680007440663</updated>
-      <workItem from="1680007441780" duration="930000" />
+      <workItem from="1680007441780" duration="1124000" />
     </task>
     <servers />
   </component>
