@@ -16,11 +16,9 @@ public class Application {
     	
     	System.out.println(converterController.getListOfValutes());
     	
-    	
-    	
     	Scanner sc = new Scanner(System.in);
     	
-    	System.out.println("from USD UAH EUR");
+    	System.out.println("from PLN USD UAH EUR");
     	String from = sc.next();
     	converterController.setFrom(from.toUpperCase());
     	
@@ -28,7 +26,7 @@ public class Application {
     	double amount = sc.nextDouble();
     	converterController.setAmount(amount);
     	
-    	System.out.println("to USD UAH EUR");
+    	System.out.println("to PLN USD UAH EUR");
     	String to = sc.next();
     	converterController.setTo(to.toUpperCase());
     	

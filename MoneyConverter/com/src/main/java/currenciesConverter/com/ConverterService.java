@@ -28,7 +28,8 @@ public class ConverterService {
 	      
         JSONObject obj = readJsonFromUrl().getJSONObject(0);
         JSONArray arr = obj.getJSONArray("rates");
-        
+
+		map.put("PLN",1.0);
         
         for(int i = 0; i < arr.length(); i++) {
             JSONObject ob = arr.getJSONObject(i);

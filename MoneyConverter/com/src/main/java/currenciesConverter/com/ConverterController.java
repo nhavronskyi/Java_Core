@@ -48,7 +48,7 @@ public class ConverterController {
 		StringBuilder string = new StringBuilder();
 		
 		Map<String, Double> map = converterService.getCurrencies();
-		
+
 		for(String str : map.keySet())
 			string.append(str + " : ").append(map.get(str) + "\n");
 		return string.toString();
