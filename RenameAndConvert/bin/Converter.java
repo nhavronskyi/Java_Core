@@ -9,7 +9,7 @@ public class Converter {
         // class who declares command to start it in the console
 		ProcessBuilder processBuilder = new ProcessBuilder();
 		processBuilder.command("bash", "-c", "./Converter.sh /Users/nhawronsky/Documents/Work/hector/");
-		// start comand in the console
+		// start command in the console
 		Process process = processBuilder.start();
 		// read a line from the console
 		BufferedReader reader = new BufferedReader(
