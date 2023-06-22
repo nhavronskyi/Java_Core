@@ -1,14 +1,14 @@
 import java.util.*;
 
-public class ToDoList {
+public class ToDoList{
     public static void main(String[] args) {
         toDoRunner();
     }
 
-
     static void toDoRunner() {
-        int ProgramStart = 0, choose;
-        MyList l = new MyList();
+        int ProgramStart = 0;
+        int choose;
+        TaskList l = new TaskListImpl();
         while (true) {
             Scanner scanner = new Scanner(System.in);
             try {
@@ -27,7 +27,7 @@ public class ToDoList {
                 case 1 -> {
                     int t;
                     try {
-                        l.toDo();
+                        l.showOptions();
                         System.out.println("----------");
                         System.out.print("Put option: ");
                         t = scanner.nextInt();
@@ -36,8 +36,7 @@ public class ToDoList {
                         continue;
                     }
                     System.out.println();
-                    l.setTask(t);
-                    l.work();
+                    l.run(t);
                     System.out.println("----------\n");
                     ProgramStart++;
                 }
