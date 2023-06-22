@@ -11,10 +11,7 @@ public class ShoppingRunner {
 
         String fullList = sc.nextLine();
 
-        LinkedList<String> list = new LinkedList<>();
-
-        list.addAll(List.of(fullList.split(",")));
-
+        LinkedList<String> list = new LinkedList<>(List.of(fullList.split(",")));
 
         Shopping shopping = new Shopping(list);
 

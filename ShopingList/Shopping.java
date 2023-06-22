@@ -6,8 +6,7 @@ import java.util.Scanner;
 import java.util.Set;
 
 public class Shopping {
-
-    private LinkedList<String> list;
+    private final LinkedList<String> list;
 
     public Shopping(LinkedList<String> list) {
         this.list = list;
@@ -17,49 +16,43 @@ public class Shopping {
         Scanner sc = new Scanner(System.in);
         Set<String> checker = new HashSet<>();
 
-		while(true) {
-			
-			if(checker.stream().count() == list.size()) {
-				System.out.println("all product already checked");
-				break;
-			}
-			
-			System.out.print("Put num: ");
-			int index;
-			try {
-				index = sc.nextInt()-1;
-			}catch(OutOfMemoryError e) {
-				System.out.println("stop!");
-				break;
-			}
+        while (true) {
+            if (checker.size() == list.size()) {
+                System.out.println("All products have been checked.");
+                break;
+            }
 
-			if(index >= list.size())
-				System.out.println("your num is >= "+ list.size());
-			else if(index < 0)
-				System.out.println("your num is < "+ 0);
-			else {
-                if(list.get(index).split(" ").length > 1) {
-                    System.out.println("product " + list.get(index).split(" ")[0] + " already checked");
-                    continue;
+            System.out.print("Enter the index: ");
+            int index = sc.nextInt() - 1;
+
+            if (index < 0 || index >= list.size()) {
+                System.out.println("Invalid index. Please try again.");
+            } else {
+                String product = list.get(index);
+                if (product.contains("[checked]")) {
+                    System.out.println("Product " + product.split(" ")[0] + " has already been checked.");
+                } else {
+                    checkProduct(checker, index);
                 }
-                sortAlgorithm(checker, index);
-			}
-			
-		}
+            }
+        }
     }
 
-    private void sortAlgorithm(Set<String> checker, int index) { 
-        checker.add(list.get(index).split(" ")[0]);
-        
-        String s = list.get(index)+" [checked]";
-        list.remove(index);
-        list.addFirst(s);
-        
+    private void checkProduct(Set<String> checker, int index) {
+        String product = list.get(index);
+        checker.add(product.split(" ")[0]);
+
+        String checkedProduct = product + " [checked]";
+        list.set(index, checkedProduct);
+
+        System.out.println("Product " + product.split(" ")[0] + " has been checked.");
         showList();
     }
+
     public void showList() {
-        System.out.println("your list:");
-        list.forEach(x -> System.out.println(list.indexOf(x)+1 + " " + x));
+        System.out.println("Your list:");
+        list.stream()
+                .map(entry -> (list.indexOf(entry) + 1) + " " + entry)
+                .forEach(System.out::println);
     }
-    
 }
